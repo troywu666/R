@@ -49,3 +49,9 @@ while (a[i] < 0) {i=i+1;a[i+1]=a[i]+2}
 
 source('fjak.r')#运行r语言脚本
 
+fivenum(x$x1, na.rm = T)#得到五数总括
+shapiro.test(x$x1)#正态性检测
+cov(x$x1, x$x2)#协方差矩阵
+cor(x$x1, x$x2)#相关系数
+
+population <- c(rep(0, 3500000), rep(1, 350000))
