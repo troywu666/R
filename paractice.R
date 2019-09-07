@@ -55,3 +55,8 @@ cov(x$x1, x$x2)#协方差矩阵
 cor(x$x1, x$x2)#相关系数
 
 population <- c(rep(0, 3500000), rep(1, 350000))
+table(population)#计算变量的个数，类似于value_counts
+sample(population, size = n, replace = F)#replace是不放回抽样
+length(population[populaition>0.5])
+Population = rep(NA, p)
+for (i in 1:p){Populaiton[i] <- sample(population, size = n, repalce = F)}
