@@ -60,3 +60,24 @@ sample(population, size = n, replace = F)#replace是不放回抽样
 length(population[populaition>0.5])
 Population = rep(NA, p)
 for (i in 1:p){Populaiton[i] <- sample(population, size = n, repalce = F)}
+seq(1, by = 2, length = 10)
+names(letters) <- paste('obs', 1:26, seq = '-')
+heart <- list(group = c(1,2,3,4,4), char = character(10))
+names(heart)
+heart$group
+complex(10)
+factor(c('gh', 'ch', 'ch', 'gh'), levels = c('gh', 'ch'), labels = c('ghty', 'chfjdk'))
+#factor可以节省存储空间#
+cut(state.x77[,'Murder'], breaks = c(0, 8, 16), labels = c('low', 'high'))
+gnp <- ts(cumsum(1+round(rnorm(100), 2)), frequency = 4, start(2019, 1))
+#cbind是一个基于matrix的操作， 用data.frame可以保留原有特性
+
+kids <- c('jack', 'henry')
+age <- c(10, 13)
+d <- data.frame(kids, age)#默认会将字符型转换为属性
+d <- data.frame(kids, age, stringsAsFactors = F)#此时不是属性，而是原来的字符串
+grep('Al', state.name)
+j <- matrix(1:12, byrow = T, ncol = 4)
+j[3]#按列开始算，取第3个
+
+order(x)#返回排列的index
