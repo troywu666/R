@@ -81,3 +81,5 @@ j <- matrix(1:12, byrow = T, ncol = 4)
 j[3]#按列开始算，取第3个
 
 order(x)#返回排列的index
+
+states[order(states$Population, decreasing = T), ]
